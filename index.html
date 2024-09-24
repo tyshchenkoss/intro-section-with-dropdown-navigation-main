@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img class="menu" src="./images/icon-close-menu.svg" />
+
+      <ul class="sidebar__list">
+        <li class="sidebar__nav--arrow">
+          <div class="logo-dropdown">
+            <span>Features</span>
+            <img
+              class="arrow arrow-closed"
+              src="./images/icon-arrow-down.svg"
+            />
+            <img
+              class="arrow arrow-opened hidden"
+              src="./images/icon-arrow-up.svg"
+            />
+          </div>
+
+          <div class="sidebar__dropdown">
+            <ul>
+              <li>
+                <img src="./images/icon-todo.svg" /><span>Todo List</span>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" /><span>Calendar</span>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" /><span>Reminders</span>
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" /><span>Planning</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="sidebar__nav--arrow">
+          <div class="logo-dropdown">
+            <span>Company</span>
+            <img
+              class="arrow arrow-closed"
+              src="./images/icon-arrow-down.svg"
+            />
+            <img
+              class="arrow arrow-opened hidden"
+              src="./images/icon-arrow-up.svg"
+            />
+          </div>
+
+          <div class="sidebar__dropdown">
+            <ul>
+              <li><span>History</span></li>
+              <li><span>Our Team</span></li>
+              <li><span>Blog</span></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span>Careers</span>
+        </li>
+        <li><span>About</span></li>
+      </ul>
+
+      <div class="sidebar__button-box">
+        <button class="btn_default">Login</button>
+        <button class="sidebar__register btn_default">Register</button>
+      </div>
+    </div>
+
+    <header>
+      <div class="header__left">
+        <img src="./images/logo.svg" />
+        <ul class="header__nav">
+          <li class="feature header__nav--arrow">
+            <span>Features</span>
+            <img
+              class="arrow arrow-closed"
+              src="./images/icon-arrow-down.svg"
+            />
+            <img
+              class="arrow arrow-opened hidden"
+              src="./images/icon-arrow-up.svg"
+            />
+            <div class="dropdown feature-dropdown hidden">
+              <ul>
+                <li>
+                  <img src="./images/icon-todo.svg" /><span>Todo List</span>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" /><span>Calendar</span>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" /><span
+                    >Reminders</span
+                  >
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" /><span>Planning</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="company header__nav--arrow">
+            <span>Company</span>
+            <img
+              class="arrow arrow-closed"
+              src="./images/icon-arrow-down.svg"
+            />
+            <img
+              class="arrow arrow-opened hidden"
+              src="./images/icon-arrow-up.svg"
+            />
+            <div class="dropdown history-dropdown hidden">
+              <ul>
+                <li><span>History</span></li>
+                <li><span>Our Team</span></li>
+                <li><span>Blog</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <span>Careers</span>
+          </li>
+          <li><span>About</span></li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <span>Login</span>
+        <span class="header__right--register">Register</span>
+      </div>
+      <div class="header__mobile">
+        <img class="menu" src="./images/icon-menu.svg" />
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="grid">
+        <div class="remote">
+          <h1 class="remote__header">Make remote work</h1>
+          <p class="remote__desc">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="remote__btn">Learn more</button>
+          <ul class="client-list">
+            <li>
+              <img src="./images/client-databiz.svg" />
+            </li>
+            <li>
+              <img src="./images/client-audiophile.svg" />
+            </li>
+            <li>
+              <img src="./images/client-meet.svg" />
+            </li>
+            <li>
+              <img src="./images/client-maker.svg" />
+            </li>
+          </ul>
+        </div>
+        <picture class="main__picture">
+          <source
+            srcset="./images/image-hero-mobile.png"
+            media="(max-width: 1100px)"
+          />
+          <img class="main__img" src="./images/image-hero-desktop.png" />
+        </picture>
+      </div>
+    </main>
+
+    <div class="overlay hidden"></div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
